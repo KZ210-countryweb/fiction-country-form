@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Submit Your Fictional Country</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      color: #000;
+      padding: 2rem;
+      background-color: #f0f0f0;
+    }
+    .form-container {
+      background-color: #ffffff;
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    input, textarea, select {
+      width: 100%;
+      margin: 0.5rem 0;
+      padding: 0.8rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #00bfff;
+      color: white;
+      border: none;
+      padding: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+    label {
+      font-weight: bold;
+    }
+    .note {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Submit Your Fictional Country!</h2>
+    <form action="https://formsubmit.co/YOUR_EMAIL@example.com" method="POST">
+      <label>Nama Pembuat</label>
+      <input type="text" name="nama_pembuat" required />
+
+      <label>Nama Negara</label>
+      <input type="text" name="nama_negara" required />
+
+      <label>Luas Wilayah (km²)</label>
+      <input type="number" name="luas_wilayah" required />
+
+      <label>Populasi</label>
+      <input type="number" name="populasi" required />
+
+      <label>Ibu Kota</label>
+      <input type="text" name="ibu_kota" required />
+
+      <label>Bahasa Resmi</label>
+      <input type="text" name="bahasa_resmi" required />
+
+      <label>Mata Uang</label>
+      <input type="text" name="mata_uang" required />
+
+      <label>Sistem Pemerintahan</label>
+      <input type="text" name="sistem_pemerintahan" required />
+
+      <label>Ekonomi</label>
+      <textarea name="ekonomi" rows="3" required></textarea>
+
+      <label>Sejarah Singkat</label>
+      <textarea name="sejarah" rows="3" required></textarea>
+
+      <label>Budaya</label>
+      <textarea name="budaya" rows="3" required></textarea>
+
+      <!-- Additional consent options -->
+      <p class="note">Pilih salah satu agar bisa mengirim:</p>
+      <label><input type="checkbox" name="subscribe" required /> Saya sudah subscribe ke <a href="https://www.youtube.com/@FictionCountry-History210" target="_blank" style="color:blue">channel YouTube</a></label><br />
+      <label><input type="checkbox" name="join_discord" required /> Saya sudah join <a href="YOUR_DISCORD_INVITE_LINK" target="_blank" style="color:blue">Discord</a></label>
+
+      <!-- FormSubmit hidden inputs -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+
+      <button type="submit">Kirim Negara Saya!</button>
+    </form>
+  </div>
+</body>
+</html>
